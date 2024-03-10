@@ -19,3 +19,4 @@ jobs:
         uses: actions/deploy-pages@v4
 permissions:
   contents: write
+  pages: write
