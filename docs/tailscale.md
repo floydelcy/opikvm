@@ -1,0 +1,66 @@
+# Tailscale
+
+[Tailscale VPN](https://tailscale.com/)可用于从互联网访问PiKVM相较于端口转发具有更高的安全性。
+Tailscale是一种方便且免费(个人使用)的工具，用于建立小型专属私有网络。
+
+基本的Tailscale配置命令如下所示。
+有关详细说明，请参阅[Tailscale 支持](https://tailscale.com/contact/support/)。
+
+-----
+## PiKVM端配置
+
+1. PiKVM安装tailsacale客户端。
+
+    ```shell
+    su -
+    curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+    curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+    apt-get update
+    apt-get install tailscale
+    tailscale up
+    ```
+
+2. `tailscale up`后会出现一个tailscale的登录URL，使用浏览器打开地址进行身份验证，
+    你可以对PiKVM主机设置取消key过期[disable key expiry](https://tailscale.com/kb/
+
+3. 身份验证成功后，对PiKVM进行重启确认一切运行正常。
+
+    ```console
+    [root@pikvm ~]# reboot
+    ```
+
+4. 查看tailscale接口IP地址:
+
+    ```console
+    [root@pikvm ~]# ip addr show tailscale0
+    ```
+
+    如果一切顺利，PiKVM就加入了您的VPN网络中.
+
+    !!! warning "如果您在没有VPN的情况下无法访问PiKVM，请不要对Tailscale进行更新"
+        遗憾的是，有时更新Tailscale客户端可能会因重大更改而导致网络问题。
+        这些是Tailscale端的兼容性问题。
+        更新时请注意这一点。
+
+-----
+## 客户端配置
+
+* [下载](https://tailscale.com/download)并安装Tailscale客户端
+    到您正在使用的系统(不是您要控制的系统)。
+* 查看[Tailscale 管理页面](https://login.tailscale.com/admin/machines)查看您的VPN网络。
+* 按照网络浏览器中的`URL：“https://<tailscale_kvm_ip>`，您将看到PiKVM web界面。
+
+-----
+## 卸载
+
+如果出现一些故障导致网络不可用，通常的建议是从PiKVM中完全删除Tailscale并执行全新安装：
+
+```shell
+su -
+apt-get remove tailscale
+y
+rm -rf /var/lib/tailscale /var/cache/tailscale
+reboot
+```
+
+按照开头的说明重新安装Tailscale。

@@ -1,0 +1,69 @@
+site_name: OrangePi Zero3 PIKVM-HAT
+site_author: Floyde.lcy
+copyright: Copyright © 2023 Floyde.lcy
+
+theme:
+  language: zh
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+    accent: indigo
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.expand
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+  logo: _assets/logo.svg
+  favicon: _assets/favicon.png
+  font:
+    text: Montserrat
+    code: JetBrains Mono
+
+extra_css:
+    - _assets/user.css
+
+plugins:
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: false
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
+  - search:
+      lang:
+        - zh
+      separator: '[\s\u200b\-]'
+
+markdown_extensions:
+    - admonition
+    - def_list
+    - attr_list
+    - pymdownx.tilde
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.magiclink
+
+nav:
+  - "如何开始":
+    - "物品清单": material.md
+    - "组装及连接": wire.md
+    - "首次启动": first_steps.md
+    - "默认密码以及2FA验证": auth.md
+  - "基本用法":
+    - "登录方式": login.md
+    - "系统设置": system.md
+    - "ATX电源控制": atx.md
+    - "MSD大容量存储驱动器": msd.md
+    - "Tailscale": tailscale.md
+    - "进阶用法": advanced.md
