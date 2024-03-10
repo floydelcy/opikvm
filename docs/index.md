@@ -1,7 +1,7 @@
 # 简介
 
 -----
-## OrangePi Zero3 PiKVM-HAT硬件
+## OrangePi Zero3 PiKVM-HAT硬件测试
 
 该项目基于开源系统[PiKVM](https://github.com/pikvm/pikvm)对Orangepi Zero3开发板进行扩展，为OrangePi Zero3扩展了PiKVM系统所需的ATX电源控制、OLED状态显示、USB、KVM切换控制等扩展接口。
 
