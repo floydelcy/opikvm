@@ -25,9 +25,13 @@ theme:
   font:
     text: Montserrat
     code: JetBrains Mono
+  custom_dir: overrides
 
 extra_css:
     - _assets/user.css
+
+extra_javascript:
+    - '_assets/js/busuanzi.pure.mini.js'
 
 plugins:
   - glightbox:
