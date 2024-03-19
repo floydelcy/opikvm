@@ -7,8 +7,8 @@
 
 目前HAT有两种版本，分别为4口ATX电源控制版本和1口ATX电源控制版本，其中：
 
-* 4 ATX HAT包含功能：ATX*4、OLED、KVM切换控制、USB2.0，配合KVM切换器可以连接4台主机
-* 1 ATX HAT包含功能：ATX*1、OLED、USB2.0，可以连接1台主机
+* 4 ATX HAT包含功能：ATX*4、HDMI-IN、OLED、KVM切换控制、USB2.0，配合KVM切换器可以连接4台主机
+* 1 ATX HAT包含功能：ATX*1、HDMI-IN、OLED、USB2.0，可以连接1台主机
 
     | 4ATX | 1ATX |
     |-----------|------------|
