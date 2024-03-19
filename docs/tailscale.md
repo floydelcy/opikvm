@@ -7,6 +7,7 @@ Tailscale是一种方便且免费(个人使用)的工具，用于建立小型专
 有关详细说明，请参阅[Tailscale 支持](https://tailscale.com/contact/support/)。
 
 -----
+
 ## PiKVM端配置
 
 1. PiKVM安装tailsacale客户端。
@@ -21,7 +22,7 @@ Tailscale是一种方便且免费(个人使用)的工具，用于建立小型专
     ```
 
 2. `tailscale up`后会出现一个tailscale的登录URL，使用浏览器打开地址进行身份验证，
-    你可以对PiKVM主机设置取消key过期[disable key expiry](https://tailscale.com/kb/
+    你可以对PiKVM主机设置取消key过期[disable key expiry](https://tailscale.com/kb/)
 
 3. 身份验证成功后，对PiKVM进行重启确认一切运行正常。
 
@@ -43,6 +44,7 @@ Tailscale是一种方便且免费(个人使用)的工具，用于建立小型专
         更新时请注意这一点。
 
 -----
+
 ## 客户端配置
 
 * [下载](https://tailscale.com/download)并安装Tailscale客户端
@@ -51,6 +53,7 @@ Tailscale是一种方便且免费(个人使用)的工具，用于建立小型专
 * 按照网络浏览器中的`URL：“https://<tailscale_kvm_ip>`，您将看到PiKVM web界面。
 
 -----
+
 ## 卸载
 
 如果出现一些故障导致网络不可用，通常的建议是从PiKVM中完全删除Tailscale并执行全新安装：

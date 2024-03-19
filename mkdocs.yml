@@ -11,15 +11,20 @@ theme:
     primary: black
     accent: indigo
   features:
-    - navigation.indexes
+    # - header.autohide
+    # - navigation.footer
+    # - navigation.indexes
     - navigation.sections
     - navigation.top
     - navigation.tracking
     - navigation.expand
+    # - navigation.tabs
     - search.highlight
     - search.share
     - search.suggest
     - content.code.copy
+    - toc.integrate
+
   logo: _assets/logo.svg
   favicon: _assets/favicon.png
   font:
@@ -27,8 +32,8 @@ theme:
     code: JetBrains Mono
   custom_dir: overrides
 
-extra_css:
-    - _assets/user.css
+# extra_css:
+#     - _assets/user.css
 
 extra_javascript:
     - '_assets/js/busuanzi.pure.mini.js'
@@ -60,15 +65,14 @@ markdown_extensions:
     - pymdownx.magiclink
 
 nav:
-  - "如何开始":
-    - "物品清单": material.md
-    - "组装及连接": wire.md
-    - "首次启动": first_steps.md
-    - "默认密码以及2FA验证": auth.md
-  - "基本用法":
-    - "登录方式": login.md
-    - "系统设置": system.md
-    - "ATX电源控制": atx.md
-    - "MSD大容量存储驱动器": msd.md
-    - "Tailscale": tailscale.md
-    - "进阶用法": advanced.md
+  - 主页: index.md
+  - 物品清单: material.md
+  - 组装及连接: wire.md
+  - 首次启动: first_steps.md
+  - 默认密码以及2FA验证: auth.md
+  - 登录方式: login.md
+  - 系统设置: system.md
+  - ATX电源控制: atx.md
+  - MSD大容量存储驱动器: msd.md
+  - Tailscale: tailscale.md
+  - 进阶用法: advanced.md

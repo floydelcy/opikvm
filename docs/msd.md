@@ -33,6 +33,7 @@ MSD(Mass Storage Drive)大容量存储驱动器，当您需要使用镜像来恢
     简单来说，通过`驱动器模式`修改过模式后，需要点击`连接`使其更改生效，但是远程主机不会实时变化，你需要通过关开[将主USB连接到服务器](system.md/#usb)模拟USB拔插的操作来使远程主机端识别到驱动器类型的变化。
 
 -----
+
 ## 上传镜像
 
 - 点击`选择镜像` -> `选择文件`，选择镜像。
@@ -44,6 +45,7 @@ MSD(Mass Storage Drive)大容量存储驱动器，当您需要使用镜像来恢
     ![upload_image](msd/upload_image.jpg){:width="400px" .off-glb}
 
 -----
+
 ## 连接镜像
 
 - `镜像`下拉框中选择镜像，点击`连接`，通过`ATX`打开远程主机电源，进入bios启动项页面，选择**PiKVM CD-ROM Driver**，回车开始引导
@@ -55,14 +57,15 @@ MSD(Mass Storage Drive)大容量存储驱动器，当您需要使用镜像来恢
     ![load_image](msd/load_image.jpg){.off-glb}
 
 -----
+
 ## 管理镜像
 
 - 点击`断开`，大容量存储驱动器状态成为已断开连接状态下，`镜像`下拉选中需要操作的镜像，点击下拉框右侧的下载、删除按钮对镜像进行相应操作。
 
     ![delete_image](msd/delete_image.jpg){:width="400px" .off-glb}
 
-
 -----
+
 ## 虚拟U盘
 
 !!! info
@@ -120,6 +123,7 @@ MSD(Mass Storage Drive)大容量存储驱动器，当您需要使用镜像来恢
         ```
 
 -----
+
 ## 使用Ventoy引导镜像
 
 - 创建[Ventoy](https://www.ventoy.net/cn/index.html)引导镜像，镜像大小根据您所需要的安装镜像大小决定，这里以win10安装镜像为例子创建一个容量为5G的空白Ventoy引导。
@@ -173,8 +177,6 @@ MSD(Mass Storage Drive)大容量存储驱动器，当您需要使用镜像来恢
     ![winscp](msd/winscp.jpg){.off-glb}
 
     ![upload_winscp](msd/upload_winscp.jpg){.off-glb}
-
-
 
 - 待上传完成后取消挂载，并删除losetup设备
 

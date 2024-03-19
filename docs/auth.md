@@ -15,6 +15,7 @@
 *参考文档更改[VNCAuth密钥](https://github.com/pikvm/pikvm/blob/master/docs/vnc.md)和[IPMI密码](https://github.com/pikvm/pikvm/blob/master/docs/ipmi.md)，这些服务在默认情况下是禁用的*。
 
 -----
+
 ## Web Terminal终端中的root访问权限
 
 如上所述，Web Terminal终端使用`kvmd-webterm`账户运行，禁用`sudo`和密码访问。
@@ -39,8 +40,8 @@
 
     对于您自己对PiKVM OS的SSH访问将仍然存在。
 
-
 -----
+
 ## 更改Linux admin密码
 
 此密码用于PiKVM OS主机SSH/串口登录
@@ -53,8 +54,8 @@ passwd: password updated successfully
 [root@orangepizero3:~#]
 ```
 
-
 -----
+
 ## 更改PiKVM Web密码
 
 此密码用于Web UI登录，用于访问[API](https://github.com/pikvm/pikvm/blob/master/docs/api.md)、[VNC](https://github.com/pikvm/pikvm/blob/master/docs/vnc.md)(如果启用)
@@ -81,6 +82,7 @@ Repeat:
 目前无法为不同的PiKVM Web用户创建任何ACL。
 
 -----
+
 ## 2FA双因素验证(Two-factor authentication)
 
 这是一种强力保护PiKVM的新方法，从`KVM >= 3.196`开始可用。

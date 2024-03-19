@@ -3,6 +3,7 @@
 !!! warning "不包含OrangePi zero3主板，该主板请自行购买"
 
 -----
+
 ## OrangePi Zero3 PIKVM-HAT包含了哪些配件
 
  目前HAT有两种版本，分别为4口ATX电源控制版本和1口ATX电源控制版本，两种版本都不包含Orangepi zero3核心板；
@@ -14,6 +15,7 @@
 | ATX控制模块*1 | ![atx_board](material/atx_board.png){:width="60px" .off-glb} | ATX控制模块*1 | ![atx_board](material/atx_board.png){:width="60px" .off-glb} |
 
 -----
+
 ## 需要自己准备的配件
 
 - Orangepi Zero3主板*1

@@ -6,6 +6,7 @@
     * SSH用于登录PiKVM本机系统
 
 -----
+
 ## Web UI登录
 
 - 打开浏览器输入PiKVM的ip地址，ip地址会在oled屏幕上显示,输入[`PiKVM Web`](auth.md)用户名密码，如果开启了[2FA](auth.md#2fatwo-factor-authentication)功能，也请输入2FA code
@@ -19,6 +20,7 @@
     ![session](login/session.jpg){.off-glb}
 
 -----
+
 ## KVM
 
 - 点击`KVM`按钮进入KVM功能界面，可以看到采集到远程主机的HDMI输出画面
@@ -30,6 +32,7 @@
     ![return](login/return.jpg){.off-glb}
 
 -----
+
 ## Web Terminal终端
 
 有以下两种方式打开Web终端
