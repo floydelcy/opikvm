@@ -4,6 +4,7 @@ on:
     branches:
       - master
       - main
+      - synctest
 jobs:
   deploy:
     permissions:
