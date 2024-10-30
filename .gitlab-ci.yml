@@ -6,6 +6,7 @@ image: python:alpine
 before_script:
   - pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mkdocs && mkdocs --version
   - pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mkdocs-material
+  - pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mkdocs-glightbox
 
 pages:
   script:
