@@ -25,6 +25,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.GITLAB_RSA_PRIVATE_KEY }}
         with:
           # 注意替换为你的 GitHub 源仓库地址
-          source-repo: git@github.com:floydelcy/xpikvm.git
+          source-repo: git@github.com:floydelcy/opikvm.git
           # 注意替换为你的 Gitee 目标仓库地址
-          destination-repo: git@gitlab.com:xpikvm/xpikvm.git
+          destination-repo: git@gitlab.com:opikvm/opikvm.git
