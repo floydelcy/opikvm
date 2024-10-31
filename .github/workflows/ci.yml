@@ -18,3 +18,13 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material mkdocs-glightbox
       - run: mkdocs gh-deploy --force
+      - name: Sync gh-page to Gitlab
+        uses: wearerequired/git-mirror-action@master
+        env:
+          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
+          SSH_PRIVATE_KEY: ${{ secrets.GITLAB_RSA_PRIVATE_KEY }}
+        with:
+          # 注意替换为你的 GitHub 源仓库地址
+          source-repo: git@github.com:floydelcy/opikvm.git
+          # 注意替换为你的 Gitee 目标仓库地址
+          destination-repo: git@gitlab.com:opikvm/opikvm.git
