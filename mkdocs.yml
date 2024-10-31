@@ -1,7 +1,7 @@
 site_name: OrangePi Zero3 PIKVM-HAT
 site_author: Floyde.lcy
 copyright: Copyright © 2023 Floyde.lcy
-site_url: https://floydelcy.github.io/xpikvm
+site_url: https://floydelcy.github.io/opikvm
 
 theme:
   language: zh
